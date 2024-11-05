@@ -1,0 +1,31 @@
+{
+  "os": "Windows-10-10.0.19043-SP0",
+  "python": "3.8.20",
+  "startedAt": "2024-10-14T15:43:05.797204Z",
+  "args": [
+    "--model_name=t5-small-SGD"
+  ],
+  "program": "train_model.py",
+  "codePath": "Downloads\\Code\\SGD_NLG_master\\train_model.py",
+  "email": "22024562@vnu.edu.vn",
+  "root": ".",
+  "host": "Twinsfa",
+  "username": "admin",
+  "executable": "A:\\Code\\envs\\sgdnlp\\python.exe",
+  "codePathLocal": "train_model.py",
+  "cpu_count": 4,
+  "cpu_count_logical": 8,
+  "disk": {
+    "/": {
+      "total": "108394500096",
+      "used": "85168017408"
+    }
+  },
+  "memory": {
+    "total": "8386805760"
+  },
+  "cpu": {
+    "count": 4,
+    "countLogical": 8
+  }
+}

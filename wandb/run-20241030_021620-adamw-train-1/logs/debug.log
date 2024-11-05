@@ -1,0 +1,27 @@
+2024-10-30 02:16:20,896 INFO    MainThread:3053 [wandb_setup.py:_flush():79] Current SDK version is 0.18.5
+2024-10-30 02:16:20,897 INFO    MainThread:3053 [wandb_setup.py:_flush():79] Configure stats pid to 3053
+2024-10-30 02:16:20,897 INFO    MainThread:3053 [wandb_setup.py:_flush():79] Loading settings from /root/.config/wandb/settings
+2024-10-30 02:16:20,898 INFO    MainThread:3053 [wandb_setup.py:_flush():79] Loading settings from /content/drive/MyDrive/SGD_NLG_master/wandb/settings
+2024-10-30 02:16:20,899 INFO    MainThread:3053 [wandb_setup.py:_flush():79] Loading settings from environment variables: {}
+2024-10-30 02:16:20,899 INFO    MainThread:3053 [wandb_setup.py:_flush():79] Applying setup settings: {'mode': None, '_disable_service': None}
+2024-10-30 02:16:20,899 INFO    MainThread:3053 [wandb_setup.py:_flush():79] Inferring run settings from compute environment: {'program_relpath': 'train_model.py', 'program_abspath': '/content/drive/MyDrive/SGD_NLG_master/train_model.py', 'program': '/content/drive/MyDrive/SGD_NLG_master/train_model.py'}
+2024-10-30 02:16:20,899 INFO    MainThread:3053 [wandb_setup.py:_flush():79] Applying login settings: {}
+2024-10-30 02:16:20,899 INFO    MainThread:3053 [wandb_init.py:_log_setup():534] Logging user logs to ./wandb/run-20241030_021620-adamw-train-1/logs/debug.log
+2024-10-30 02:16:20,899 INFO    MainThread:3053 [wandb_init.py:_log_setup():535] Logging internal logs to ./wandb/run-20241030_021620-adamw-train-1/logs/debug-internal.log
+2024-10-30 02:16:20,900 INFO    MainThread:3053 [wandb_init.py:init():621] calling init triggers
+2024-10-30 02:16:20,900 INFO    MainThread:3053 [wandb_init.py:init():628] wandb.init called with sweep_config: {}
+config: {'ModelName': 't5-small-SGD', 'ExpName': 'schema-guided', 'VerName': 'adamw-train-1', 'WandbProject': 'bbyrne-nlg', 'Note': 't5-small for SGD, using schema-guided linearization', 'TokenizerInfo': {'tokenizer_class': 'T5TokenizerFast', 'tokenizer_name': 't5-small', 'tokenizer_alias': 'T5TokenizerFast'}, 'LightningModuleName': 'HFGenerationModel', 'LightningModuleParas': {'model_path': 't5-small', 'optimizer': 'AdamW', 'optimizer_params': {'lr': 0.0001}}, 'LightningDataModuleName': 'GEMSGD_DataModule', 'LightningDataModuleParas': {'batch_size': 8, 'tokenizer_name': 'T5TokenizerFast', 'force_process': False, 'save_cache': True, 'encode_args': {'padding': 'max_length', 'truncation': True}, 'linearizer_class': 'SGD_SchemaGuidedLinearizer', 'schema_paths': ['data/schemas/schema-train.json', 'data/schemas/schema-test.json', 'data/schemas/schema-dev.json'], 'template_dir': 'data/utterance_templates'}, 'TrainerParas': {'max_epochs': 3, 'val_check_interval': 10000, 'accelerator': 'gpu', 'devices': 1, 'default_root_dir': 'models/t5-small-SGD'}, 'ModelCheckpointParas': {'monitor': 'val_loss'}, 'TrainLoggerName': 'WandbLogger', 'TrainLoggerParas': {'project': 'bbyrne-nlg', 'name': 'schema-guided', 'version': 'adamw-train-1'}, 'TestLoggerName': 'CSVLogger', 'TestLoggerParas': {'name': 'schema-guided', 'version': 'adamw-train-1'}, 'LoadingParas': {'checkpoint_path': 'bbyrne-nlg/adamw-train-1/checkpoints/epoch=2-step=61245.ckpt', 'save_decode': True, 'decode_path': 'logs/schema-guided/test-adamw-1/', 'generate_params': {'num_beams': 4, 'length_penalty': 0.6, 'max_length': 100}}}
+2024-10-30 02:16:20,900 INFO    MainThread:3053 [wandb_init.py:init():671] starting backend
+2024-10-30 02:16:20,900 INFO    MainThread:3053 [wandb_init.py:init():675] sending inform_init request
+2024-10-30 02:16:20,903 INFO    MainThread:3053 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-10-30 02:16:20,914 INFO    MainThread:3053 [wandb_init.py:init():688] backend started and connected
+2024-10-30 02:16:20,921 INFO    MainThread:3053 [wandb_init.py:init():783] updated telemetry
+2024-10-30 02:16:20,923 INFO    MainThread:3053 [wandb_init.py:init():816] communicating run to backend with 90.0 second timeout
+2024-10-30 02:16:21,738 INFO    MainThread:3053 [wandb_init.py:init():859] run resumed
+2024-10-30 02:16:21,761 INFO    MainThread:3053 [wandb_init.py:init():867] starting run threads in backend
+2024-10-30 02:16:22,502 INFO    MainThread:3053 [wandb_run.py:_console_start():2463] atexit reg
+2024-10-30 02:16:22,503 INFO    MainThread:3053 [wandb_run.py:_redirect():2311] redirect: wrap_raw
+2024-10-30 02:16:22,505 INFO    MainThread:3053 [wandb_run.py:_redirect():2376] Wrapping output streams.
+2024-10-30 02:16:22,505 INFO    MainThread:3053 [wandb_run.py:_redirect():2401] Redirects installed.
+2024-10-30 02:16:22,520 INFO    MainThread:3053 [wandb_init.py:init():911] run started, returning control to user process
+2024-10-30 02:16:49,637 INFO    MainThread:3053 [wandb_run.py:_config_callback():1390] config_cb None None {'model_class': 'T5ForConditionalGeneration', 'model_path': 't5-small', 'tokenizer': None, 'optimizer': 'AdamW', 'optimizer_params': {'lr': 0.0001}, 'decode_path': 'default_test/', 'save_decode': False, 'generate_params': None}

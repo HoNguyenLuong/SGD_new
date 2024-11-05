@@ -1,0 +1,9 @@
+{"time":"2024-10-17T07:54:57.982258938Z","level":"INFO","msg":"using version","core version":"0.18.3"}
+{"time":"2024-10-17T07:54:57.983594522Z","level":"INFO","msg":"created symlink","path":"wandb/run-20241017_075457-adamw-train-1/logs/debug-core.log"}
+{"time":"2024-10-17T07:54:57.990106325Z","level":"INFO","msg":"created new stream","id":"adamw-train-1"}
+{"time":"2024-10-17T07:54:57.990883119Z","level":"INFO","msg":"stream: started","id":"adamw-train-1"}
+{"time":"2024-10-17T07:54:57.990907601Z","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"adamw-train-1"}}
+{"time":"2024-10-17T07:54:57.990981301Z","level":"INFO","msg":"handler: started","stream_id":{"value":"adamw-train-1"}}
+{"time":"2024-10-17T07:54:57.991004893Z","level":"INFO","msg":"sender: started","stream_id":{"value":"adamw-train-1"}}
+{"time":"2024-10-17T07:54:58.34543885Z","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-10-17T07:54:58.355337904Z","level":"INFO","msg":"Starting system monitor"}
