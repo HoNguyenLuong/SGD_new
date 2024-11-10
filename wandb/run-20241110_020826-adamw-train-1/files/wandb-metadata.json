@@ -1,0 +1,46 @@
+{
+  "os": "Linux-5.15.0-43-generic-x86_64-with-glibc2.35",
+  "python": "3.10.12",
+  "startedAt": "2024-11-10T02:08:26.024697Z",
+  "args": [
+    "--model_name=t5-small-SGD"
+  ],
+  "program": "/root/SGD_NLG/train_model.py",
+  "codePath": "train_model.py",
+  "git": {
+    "remote": "http://github.com/HoNguyenLuong/SGD_NLG.git",
+    "commit": "b22724ad368176f0cbf7b75215dbe6ffe5c0377e"
+  },
+  "email": "22024562@vnu.edu.vn",
+  "root": ".",
+  "host": "trainAI",
+  "username": "root",
+  "executable": "/root/SGD_NLG/test/bin/python",
+  "codePathLocal": "train_model.py",
+  "cpu_count": 14,
+  "cpu_count_logical": 14,
+  "gpu": "GRID P40-24Q",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "316933189632",
+      "used": "46298357760"
+    }
+  },
+  "memory": {
+    "total": "49303527424"
+  },
+  "cpu": {
+    "count": 14,
+    "countLogical": 14
+  },
+  "gpu_nvidia": [
+    {
+      "name": "GRID P40-24Q",
+      "memoryTotal": "25769803776",
+      "cudaCores": 3840,
+      "architecture": "Pascal"
+    }
+  ],
+  "cudaVersion": "12.0"
+}

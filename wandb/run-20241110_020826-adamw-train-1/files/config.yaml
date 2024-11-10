@@ -1,0 +1,132 @@
+_wandb:
+    value:
+        cli_version: 0.18.6
+        m:
+            - "1": trainer/global_step
+              "6":
+                - 3
+              "7": []
+        python_version: 3.10.12
+        t:
+            "1":
+                - 1
+                - 9
+                - 11
+                - 49
+                - 51
+                - 55
+                - 103
+            "2":
+                - 1
+                - 9
+                - 11
+                - 49
+                - 51
+                - 55
+                - 103
+            "3":
+                - 5
+                - 7
+                - 13
+                - 14
+                - 16
+                - 23
+                - 55
+                - 62
+                - 66
+            "4": 3.10.12
+            "5": 0.18.6
+            "6": 4.44.2
+            "8":
+                - 5
+            "12": 0.18.6
+            "13": linux-x86_64
+ExpName:
+    value: schema-guided
+LightningDataModuleName:
+    value: GEMSGD_DataModule
+LightningDataModuleParas:
+    value:
+        batch_size: 8
+        encode_args:
+            padding: max_length
+            truncation: true
+        force_process: false
+        linearizer_class: SGD_SchemaGuidedLinearizer
+        save_cache: true
+        schema_paths:
+            - data/schemas/schema-train.json
+            - data/schemas/schema-test.json
+            - data/schemas/schema-dev.json
+        template_dir: data/utterance_templates
+        tokenizer_name: T5TokenizerFast
+LightningModuleName:
+    value: HFGenerationModel
+LightningModuleParas:
+    value:
+        model_path: t5-small
+        optimizer: AdamW
+        optimizer_params:
+            lr: 0.0001
+LoadingParas:
+    value:
+        checkpoint_path: bbyrne-nlg/adamw-train-1/checkpoints/epoch=2-step=61245.ckpt
+        decode_path: logs/schema-guided/test-adamw-1/
+        generate_params:
+            length_penalty: 0.6
+            max_length: 100
+            num_beams: 4
+        save_decode: true
+ModelCheckpointParas:
+    value:
+        monitor: val_loss
+ModelName:
+    value: t5-small-SGD
+Note:
+    value: t5-small for SGD, using schema-guided linearization
+TestLoggerName:
+    value: CSVLogger
+TestLoggerParas:
+    value:
+        name: schema-guided
+        version: adamw-train-1
+TokenizerInfo:
+    value:
+        tokenizer_alias: T5TokenizerFast
+        tokenizer_class: T5TokenizerFast
+        tokenizer_name: t5-small
+TrainLoggerName:
+    value: WandbLogger
+TrainLoggerParas:
+    value:
+        name: schema-guided
+        project: bbyrne-nlg
+        version: adamw-train-1
+TrainerParas:
+    value:
+        accelerator: gpu
+        default_root_dir: models/t5-small-SGD
+        devices: 1
+        max_epochs: 3
+        val_check_interval: 10000
+VerName:
+    value: adamw-train-1
+WandbProject:
+    value: bbyrne-nlg
+decode_path:
+    value: default_test/
+generate_params:
+    value: null
+model_class:
+    value: T5ForConditionalGeneration
+model_path:
+    value: t5-small
+optimizer:
+    value: AdamW
+optimizer_params:
+    value:
+        lr: 0.0001
+save_decode:
+    value: false
+tokenizer:
+    value: null

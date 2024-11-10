@@ -1,0 +1,91 @@
+Processing data/GEMSGD_T5TokenizerFast_SGD_SchemaGuidedLinearizer_train
+Map: 100%|███████████████████████████| 164982/164982 [00:33<00:00, 4952.22 examples/s]
+{'gem_id': ['schema_guided_dialog-train-0', 'schema_guided_dialog-train-1', 'schema_guided_dialog-train-2', 'schema_guided_dialog-train-3', 'schema_guided_dialog-train-4', 'schema_guided_dialog-train-5', 'schema_guided_dialog-train-6', 'schema_guided_dialog-train-7', 'schema_guided_dialog-train-8', 'schema_guided_dialog-train-9', 'schema_guided_dialog-train-10', 'schema_guided_dialog-train-11', 'schema_guided_dialog-train-12', 'schema_guided_dialog-train-13', 'schema_guided_dialog-train-14', 'schema_guided_dialog-train-15', 'schema_guided_dialog-train-16', 'schema_guided_dialog-train-17', 'schema_guided_dialog-train-18', 'schema_guided_dialog-train-19'], 'gem_parent_id': ['schema_guided_dialog-train-0', 'schema_guided_dialog-train-1', 'schema_guided_dialog-train-2', 'schema_guided_dialog-train-3', 'schema_guided_dialog-train-4', 'schema_guided_dialog-train-5', 'schema_guided_dialog-train-6', 'schema_guided_dialog-train-7', 'schema_guided_dialog-train-8', 'schema_guided_dialog-train-9', 'schema_guided_dialog-train-10', 'schema_guided_dialog-train-11', 'schema_guided_dialog-train-12', 'schema_guided_dialog-train-13', 'schema_guided_dialog-train-14', 'schema_guided_dialog-train-15', 'schema_guided_dialog-train-16', 'schema_guided_dialog-train-17', 'schema_guided_dialog-train-18', 'schema_guided_dialog-train-19'], 'dialog_acts': [[{'act': 13, 'slot': 'city', 'values': []}], [{'act': 13, 'slot': 'cuisine', 'values': ['Mexican', 'Italian']}], [{'act': 11, 'slot': 'restaurant_name', 'values': ['71 Saint Peter']}, {'act': 11, 'slot': 'city', 'values': ['San Jose']}], [{'act': 4, 'slot': 'street_address', 'values': ['71 North San Pedro Street']}], [{'act': 4, 'slot': 'phone_number', 'values': ['408-971-8523']}], [{'act': 11, 'slot': 'restaurant_name', 'values': ['Bazille']}, {'act': 11, 'slot': 'city', 'values': ['San Jose']}], [{'act': 11, 'slot': 'restaurant_name', 'values': ['Bird Dog']}, {'act': 11, 'slot': 'city', 'values': ['Palo Alto']}, {'act': 5, 'slot': 'count', 'values': ['7']}], [{'act': 13, 'slot': 'time', 'values': []}], [{'act': 2, 'slot': 'restaurant_name', 'values': ['Bird Dog']}, {'act': 2, 'slot': 'city', 'values': ['Palo Alto']}, {'act': 2, 'slot': 'time', 'values': ['11:30 am']}, {'act': 2, 'slot': 'party_size', 'values': ['2']}, {'act': 2, 'slot': 'date', 'values': ['today']}], [{'act': 4, 'slot': 'has_live_music', 'values': ['False']}, {'act': 10, 'slot': '', 'values': []}], [{'act': 4, 'slot': 'street_address', 'values': ['420 Ramona Street']}, {'act': 4, 'slot': 'serves_alcohol', 'values': ['False']}], [{'act': 3, 'slot': '', 'values': []}], [{'act': 13, 'slot': 'cuisine', 'values': []}, {'act': 13, 'slot': 'city', 'values': []}], [{'act': 11, 'slot': 'restaurant_name', 'values': ['Anjappar Chettinad Restaurant']}, {'act': 11, 'slot': 'city', 'values': ['Milpitas']}], [{'act': 4, 'slot': 'street_address', 'values': ['Milpitas Square']}, {'act': 4, 'slot': 'price_range', 'values': ['moderate']}], [{'act': 11, 'slot': 'restaurant_name', 'values': ['Aria Dining & Banquets Fine Indian Cuisine']}, {'act': 11, 'slot': 'city', 'values': ['Milpitas']}], [{'act': 11, 'slot': 'restaurant_name', 'values': ['Olive garden Italian Restaurant']}, {'act': 11, 'slot': 'city', 'values': ['Milpitas']}, {'act': 5, 'slot': 'count', 'values': ['2']}], [{'act': 12, 'slot': 'intent', 'values': ['ReserveRestaurant']}], [{'act': 13, 'slot': 'time', 'values': []}], [{'act': 2, 'slot': 'restaurant_name', 'values': ['Olive Garden Italian Restaurant']}, {'act': 2, 'slot': 'city', 'values': ['Milpitas']}, {'act': 2, 'slot': 'time', 'values': ['1:30 pm']}, {'act': 2, 'slot': 'date', 'values': ['March 11th']}, {'act': 2, 'slot': 'party_size', 'values': ['2']}]], 'context': [[], ['I am feeling hungry so I would like to find a place to eat.', 'Do you have a specific which you want the eating place to be located at?'], ['I am feeling hungry so I would like to find a place to eat.', 'Do you have a specific which you want the eating place to be located at?', 'I would like for it to be in San Jose.', 'Is there a specific cuisine type you enjoy
+Map: 100%|███████████████████████████| 164982/164982 [00:32<00:00, 5136.57 examples/s]
+Map: 100%|███████████████████████████| 164982/164982 [00:33<00:00, 4927.67 examples/s]
+Map: 100%|███████████████████████████| 164982/164982 [00:42<00:00, 3888.90 examples/s]
+Saving the dataset (3/3 shards): 100%|█| 164982/164982 [00:01<00:00, 146659.96 example
+Processing data/GEMSGD_T5TokenizerFast_SGD_SchemaGuidedLinearizer_val
+Map: 100%|█████████████████████████████| 10000/10000 [00:02<00:00, 4671.34 examples/s]
+{'gem_id': ['schema_guided_dialog-validation-0', 'schema_guided_dialog-validation-1', 'schema_guided_dialog-validation-2', 'schema_guided_dialog-validation-3', 'schema_guided_dialog-validation-4', 'schema_guided_dialog-validation-5', 'schema_guided_dialog-validation-6', 'schema_guided_dialog-validation-7', 'schema_guided_dialog-validation-8', 'schema_guided_dialog-validation-9', 'schema_guided_dialog-validation-10', 'schema_guided_dialog-validation-11', 'schema_guided_dialog-validation-12', 'schema_guided_dialog-validation-13', 'schema_guided_dialog-validation-14', 'schema_guided_dialog-validation-15', 'schema_guided_dialog-validation-16', 'schema_guided_dialog-validation-17', 'schema_guided_dialog-validation-18', 'schema_guided_dialog-validation-19'], 'gem_parent_id': ['schema_guided_dialog-validation-0', 'schema_guided_dialog-validation-1', 'schema_guided_dialog-validation-2', 'schema_guided_dialog-validation-3', 'schema_guided_dialog-validation-4', 'schema_guided_dialog-validation-5', 'schema_guided_dialog-validation-6', 'schema_guided_dialog-validation-7', 'schema_guided_dialog-validation-8', 'schema_guided_dialog-validation-9', 'schema_guided_dialog-validation-10', 'schema_guided_dialog-validation-11', 'schema_guided_dialog-validation-12', 'schema_guided_dialog-validation-13', 'schema_guided_dialog-validation-14', 'schema_guided_dialog-validation-15', 'schema_guided_dialog-validation-16', 'schema_guided_dialog-validation-17', 'schema_guided_dialog-validation-18', 'schema_guided_dialog-validation-19'], 'dialog_acts': [[{'act': 2, 'slot': 'song_name', 'values': ['Carnivore']}, {'act': 2, 'slot': 'playback_device', 'values': ['TV']}], [{'act': 2, 'slot': 'therapist_name', 'values': ['Lola vildavskaia']}, {'act': 2, 'slot': 'appointment_time', 'values': ['9:30 am']}, {'act': 2, 'slot': 'appointment_date', 'values': ['march 11th']}], [{'act': 11, 'slot': 'restaurant_name', 'values': ['Precita Park Cafe & Grill']}, {'act': 11, 'slot': 'location', 'values': ['San Francisco']}], [{'act': 11, 'slot': 'song_name', 'values': ['Girl Like you']}, {'act': 11, 'slot': 'artist', 'values': ['Jason Aldean']}, {'act': 11, 'slot': 'album', 'values': ['Rearview town']}, {'act': 5, 'slot': 'count', 'values': ['10']}], [{'act': 12, 'slot': 'intent', 'values': ['ReserveRestaurant']}], [{'act': 11, 'slot': 'event_name', 'values': ['Blueface']}, {'act': 11, 'slot': 'event_location', 'values': ['The Fillmore Philadelphia']}, {'act': 11, 'slot': 'date', 'values': ['March 13th']}, {'act': 11, 'slot': 'time', 'values': ['6 pm']}, {'act': 5, 'slot': 'count', 'values': ['10']}], [{'act': 13, 'slot': 'shared_ride', 'values': []}], [{'act': 4, 'slot': 'humidity', 'values': ['47']}], [{'act': 3, 'slot': '', 'values': []}], [{'act': 11, 'slot': 'airlines', 'values': ['American Airlines']}, {'act': 11, 'slot': 'outbound_departure_time', 'values': ['11:10 am']}, {'act': 11, 'slot': 'inbound_departure_time', 'values': ['7:55 pm']}, {'act': 11, 'slot': 'price', 'values': ['$244']}, {'act': 5, 'slot': 'count', 'values': ['4']}], [{'act': 15, 'slot': '', 'values': []}], [{'act': 11, 'slot': 'hotel_name', 'values': ['AC Hotel By Marriott Beverly Hills']}, {'act': 11, 'slot': 'star_rating', 'values': ['1']}], [{'act': 3, 'slot': '', 'values': []}], [{'act': 12, 'slot': 'intent', 'values': ['ReserveCar']}], [{'act': 4, 'slot': 'price_range', 'values': ['moderate']}], [{'act': 3, 'slot': '', 'values': []}], [{'act': 13, 'slot': 'return_date', 'values': []}, {'act': 13, 'slot': 'origin_city', 'values': []}], [{'act': 2, 'slot': 'account_type', 'values': ['checking']}, {'act': 2, 'slot': 'transfer_amount', 'values': ['$1600']}, {'act': 2, 'slot': 'recipient_name', 'values': ['philip']}, {'act': 2, 'slot': 'recipient_account_type', 'values': ['checking']}], [{'act': 13, 'slot': 'city', 'values': []}], [{'act': 11, 'slot': 'hotel_name', 'values': ['Aloft Phoenix-Airport']}, {'act': 11, 'slot': 'star_rating', 'values': ['3']}, {'act': 5, 'slot': 'count', 'values': ['10']}]], 'context': [['I need a movie to watch.', 'I have 10 movies. What about Searching for Sugar M
+Map: 100%|█████████████████████████████| 10000/10000 [00:02<00:00, 4943.39 examples/s]
+Map: 100%|█████████████████████████████| 10000/10000 [00:02<00:00, 4762.73 examples/s]
+Map: 100%|█████████████████████████████| 10000/10000 [00:02<00:00, 3411.66 examples/s]
+Saving the dataset (1/1 shards): 100%|█| 10000/10000 [00:00<00:00, 71381.23 examples/s
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/root/SGD_NLG/test/lib/python3.10/site-packages/transformers/optimization.py:591: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+
+  | Name  | Type                       | Params | Mode
+------------------------------------------------------------
+0 | model | T5ForConditionalGeneration | 60.5 M | eval
+------------------------------------------------------------
+60.5 M    Trainable params
+0         Non-trainable params
+60.5 M    Total params
+242.026   Total estimated model params size (MB)
+0         Modules in train mode
+277       Modules in eval mode
+Sanity Checking: |                                              | 0/? [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/root/SGD_NLG/train_model.py", line 64, in <module>
+    trainer.fit(model, dm)
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 538, in fit
+    call._call_and_handle_interrupt(
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/pytorch_lightning/trainer/call.py", line 47, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 574, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 981, in _run
+    results = self._run_stage()
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1023, in _run_stage
+    self._run_sanity_check()
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1052, in _run_sanity_check
+    val_loop.run()
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/pytorch_lightning/loops/utilities.py", line 178, in _decorator
+    return loop_run(self, *args, **kwargs)
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/pytorch_lightning/loops/evaluation_loop.py", line 128, in run
+    batch, batch_idx, dataloader_idx = next(data_fetcher)
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/pytorch_lightning/loops/fetchers.py", line 133, in __next__
+    batch = super().__next__()
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/pytorch_lightning/loops/fetchers.py", line 60, in __next__
+    batch = next(self.iterator)
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/pytorch_lightning/utilities/combined_loader.py", line 341, in __next__
+    out = next(self._iterator)
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/pytorch_lightning/utilities/combined_loader.py", line 142, in __next__
+    out = next(self.iterators[0])
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1465, in _next_data
+    return self._process_data(data)
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1491, in _process_data
+    data.reraise()
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/torch/_utils.py", line 715, in reraise
+    raise exception
+ValueError: Caught ValueError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/torch/utils/data/_utils/worker.py", line 351, in _worker_loop
+    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 50, in fetch
+    data = self.dataset.__getitems__(possibly_batched_index)
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 2804, in __getitems__
+    batch = self.__getitem__(keys)
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 2800, in __getitem__
+    return self._getitem(key)
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 2785, in _getitem
+    formatted_output = format_table(
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/datasets/formatting/formatting.py", line 637, in format_table
+    formatted_output = formatter(pa_table_to_format, query_type=query_type)
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/datasets/formatting/formatting.py", line 400, in __call__
+    return self.format_batch(pa_table)
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/datasets/formatting/torch_formatter.py", line 100, in format_batch
+    batch = self.numpy_arrow_extractor().extract_batch(pa_table)
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/datasets/formatting/formatting.py", line 164, in extract_batch
+    return {col: self._arrow_array_to_numpy(pa_table[col]) for col in pa_table.column_names}
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/datasets/formatting/formatting.py", line 164, in <dictcomp>
+    return {col: self._arrow_array_to_numpy(pa_table[col]) for col in pa_table.column_names}
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/datasets/formatting/formatting.py", line 196, in _arrow_array_to_numpy
+    return np.array(array, copy=False)
+ValueError: Unable to avoid copy while creating an array as requested.
+If using `np.array(obj, copy=False)` replace it with `np.asarray(obj)` to allow a copy when needed (no behavior change in NumPy 1.x).
+For more details, see https://numpy.org/devdocs/numpy_2_0_migration_guide.html#adapting-to-changes-in-the-copy-keyword.

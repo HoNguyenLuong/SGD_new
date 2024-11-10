@@ -1,0 +1,79 @@
+Read data/GEMSGD_T5TokenizerFast_SGD_SchemaGuidedLinearizer_train
+Read data/GEMSGD_T5TokenizerFast_SGD_SchemaGuidedLinearizer_val
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/root/SGD_NLG/test/lib/python3.10/site-packages/transformers/optimization.py:591: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+
+  | Name  | Type                       | Params | Mode
+------------------------------------------------------------
+0 | model | T5ForConditionalGeneration | 60.5 M | eval
+------------------------------------------------------------
+60.5 M    Trainable params
+0         Non-trainable params
+60.5 M    Total params
+242.026   Total estimated model params size (MB)
+0         Modules in train mode
+277       Modules in eval mode
+Sanity Checking: |                                              | 0/? [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/root/SGD_NLG/train_model.py", line 64, in <module>
+    trainer.fit(model, dm)
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 538, in fit
+    call._call_and_handle_interrupt(
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/pytorch_lightning/trainer/call.py", line 47, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 574, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 981, in _run
+    results = self._run_stage()
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1023, in _run_stage
+    self._run_sanity_check()
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1052, in _run_sanity_check
+    val_loop.run()
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/pytorch_lightning/loops/utilities.py", line 178, in _decorator
+    return loop_run(self, *args, **kwargs)
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/pytorch_lightning/loops/evaluation_loop.py", line 128, in run
+    batch, batch_idx, dataloader_idx = next(data_fetcher)
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/pytorch_lightning/loops/fetchers.py", line 133, in __next__
+    batch = super().__next__()
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/pytorch_lightning/loops/fetchers.py", line 60, in __next__
+    batch = next(self.iterator)
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/pytorch_lightning/utilities/combined_loader.py", line 341, in __next__
+    out = next(self._iterator)
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/pytorch_lightning/utilities/combined_loader.py", line 142, in __next__
+    out = next(self.iterators[0])
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1465, in _next_data
+    return self._process_data(data)
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1491, in _process_data
+    data.reraise()
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/torch/_utils.py", line 715, in reraise
+    raise exception
+ValueError: Caught ValueError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/torch/utils/data/_utils/worker.py", line 351, in _worker_loop
+    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 50, in fetch
+    data = self.dataset.__getitems__(possibly_batched_index)
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 2804, in __getitems__
+    batch = self.__getitem__(keys)
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 2800, in __getitem__
+    return self._getitem(key)
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 2785, in _getitem
+    formatted_output = format_table(
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/datasets/formatting/formatting.py", line 637, in format_table
+    formatted_output = formatter(pa_table_to_format, query_type=query_type)
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/datasets/formatting/formatting.py", line 400, in __call__
+    return self.format_batch(pa_table)
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/datasets/formatting/torch_formatter.py", line 100, in format_batch
+    batch = self.numpy_arrow_extractor().extract_batch(pa_table)
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/datasets/formatting/formatting.py", line 164, in extract_batch
+    return {col: self._arrow_array_to_numpy(pa_table[col]) for col in pa_table.column_names}
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/datasets/formatting/formatting.py", line 164, in <dictcomp>
+    return {col: self._arrow_array_to_numpy(pa_table[col]) for col in pa_table.column_names}
+  File "/root/SGD_NLG/test/lib/python3.10/site-packages/datasets/formatting/formatting.py", line 196, in _arrow_array_to_numpy
+    return np.array(array, copy=False)
+ValueError: Unable to avoid copy while creating an array as requested.
+If using `np.array(obj, copy=False)` replace it with `np.asarray(obj)` to allow a copy when needed (no behavior change in NumPy 1.x).
+For more details, see https://numpy.org/devdocs/numpy_2_0_migration_guide.html#adapting-to-changes-in-the-copy-keyword.

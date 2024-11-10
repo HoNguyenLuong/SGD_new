@@ -1,0 +1,16 @@
+{"time":"2024-11-10T02:08:26.027960607Z","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-10T02:08:26.028003013Z","level":"INFO","msg":"created symlink","path":"wandb/run-20241110_020826-adamw-train-1/logs/debug-core.log"}
+{"time":"2024-11-10T02:08:26.13885723Z","level":"INFO","msg":"created new stream","id":"adamw-train-1"}
+{"time":"2024-11-10T02:08:26.139122944Z","level":"INFO","msg":"stream: started","id":"adamw-train-1"}
+{"time":"2024-11-10T02:08:26.139296685Z","level":"INFO","msg":"sender: started","stream_id":"adamw-train-1"}
+{"time":"2024-11-10T02:08:26.139202079Z","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"adamw-train-1"}}
+{"time":"2024-11-10T02:08:26.139403308Z","level":"INFO","msg":"handler: started","stream_id":{"value":"adamw-train-1"}}
+{"time":"2024-11-10T02:08:26.955827839Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-10T02:08:28.068877744Z","level":"INFO","msg":"stream: closing","id":"adamw-train-1"}
+{"time":"2024-11-10T02:08:28.06894645Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-10T02:08:28.071507169Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-10T02:08:32.43667076Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-10T02:08:32.781785397Z","level":"INFO","msg":"handler: closed","stream_id":{"value":"adamw-train-1"}}
+{"time":"2024-11-10T02:08:32.781911519Z","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"adamw-train-1"}}
+{"time":"2024-11-10T02:08:32.781931833Z","level":"INFO","msg":"sender: closed","stream_id":"adamw-train-1"}
+{"time":"2024-11-10T02:08:32.782040495Z","level":"INFO","msg":"stream: closed","id":"adamw-train-1"}

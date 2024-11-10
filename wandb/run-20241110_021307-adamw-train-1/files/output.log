@@ -1,0 +1,17 @@
+Read data/GEMSGD_T5TokenizerFast_SGD_SchemaGuidedLinearizer_train
+Read data/GEMSGD_T5TokenizerFast_SGD_SchemaGuidedLinearizer_val
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/root/SGD_NLG/test/lib/python3.10/site-packages/transformers/optimization.py:591: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+
+  | Name  | Type                       | Params
+-----------------------------------------------------
+0 | model | T5ForConditionalGeneration | 60.5 M
+-----------------------------------------------------
+60.5 M    Trainable params
+0         Non-trainable params
+60.5 M    Total params
+242.026   Total estimated model params size (MB)
+Epoch 0:  70%|▋| 14487/20623 [3:59:21<1:41:22,  1.01it/s, v_num=in-1, train_loss=                                                                                                             
+                                                                                                                                                                                              
+/root/SGD_NLG/test/lib/python3.10/site-packages/pytorch_lightning/trainer/call.py:54: Detected KeyboardInterrupt, attempting graceful shutdown...
